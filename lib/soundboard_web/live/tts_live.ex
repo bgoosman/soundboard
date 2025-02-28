@@ -22,7 +22,7 @@ defmodule SoundboardWeb.SoundboardWeb.TTSLive do
       </.simple_form>
       <ul class="mt-4">
         <%= for query <- @queries do %>
-          <li>
+          <li class="mb-2">
             <a href={"/tts/download?query=#{URI.encode_www_form(query)}&voice_id=#{@voice_id}"} target="_blank">
               Download "{query}"
             </a>
