@@ -46,7 +46,7 @@ defmodule Soundboard.Elevenlabs do
     output_format = Keyword.get(opts, :output_format, "mp3_44100_128")
     model_id = Keyword.get(opts, :model_id, "eleven_flash_v2_5")
     voice_id = Keyword.get(opts, :voice_id, "U1Vk2oyatMdYs096Ety7")
-    url = "/text-to-speech/#{voice_id}?output_format=#{output_format}"
+    url = "/text-to-speech/#{voice_id}?output_format=#{output_format}" |> IO.inspect(label: "url")
     body = Jason.encode!(%{text: text, model_id: model_id})
 
     case Req.post(req(), url: url, body: body) do
