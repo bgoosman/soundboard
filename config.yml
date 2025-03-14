@@ -1,0 +1,4 @@
+openai:
+  base_url: http://litellm-proxy.tail3cd02.ts.net:38383
+  # api_key: sk-3xiAYjIguZSyUYAyUEGWPg
+  api_key: sk-axXl7hC5s2dBZ3XBWjl3HA
